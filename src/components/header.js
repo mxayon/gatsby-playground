@@ -5,7 +5,7 @@ import './Header.css'
 const Header = ({ siteTitle }) => (
   <div className="Header">
     <div className="HeaderGroup">
-      <Link to="/"><img src={require('../images/mx-logo-code.png')} width="30"/></Link>
+      <Link to="/"><img src={require('../images/mx-logo-code.png')} width="60"/></Link>
       <Link to="/courses">Courses</Link>
       <Link to="/downloads">Downloads</Link>
       <Link to="/workshops">Workshops</Link>

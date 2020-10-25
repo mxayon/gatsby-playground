@@ -48,22 +48,28 @@ const IndexPage = () => (
     </div>
     <div className="Cards">
       <h2>11 done, more on the way...</h2>
-      <Card 
-        title="React for Designers"
-        text="12 sections"
-        image={require('../images/wallpaper.jpg')}/>
-      <Card 
-        title="Course II"
-        text="12 sections"
-        image={require('../images/wallpaper2.jpg')}/>
-      <Card 
-        title="Course III"
-        text="12 sections"
-        image={require('../images/wallpaper3.jpg')}/>
-      <Card 
-        title="Course IV"
-        text="12 sections"
-        image={require('../images/wallpaper4.jpg')}/>
+      <div className="CardGroup">
+        <Card
+            title="React for Designers"
+            text="12 sections"
+            image={require('../images/wallpaper.jpg')}
+          />
+          <Card
+            title="Course II"
+            text="12 sections"
+            image={require('../images/wallpaper2.jpg')}
+          />
+          <Card
+            title="Course III"
+            text="12 sections"
+            image={require('../images/wallpaper3.jpg')}
+          />
+          <Card
+            title="Course IV"
+            text="12 sections"
+            image={require('../images/wallpaper4.jpg')}  
+        />
+      </div>
     </div>
   </div>
 )

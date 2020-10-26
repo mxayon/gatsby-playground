@@ -3,7 +3,30 @@ import Link from 'gatsby-link';
 import Card from '../components/Cards';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
-import staticdata from '../../staticdata.json'
+import staticdata from '../../staticdata.json';
+import Cell from '../components/Cell';
+import styled from 'styled-components';
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94A4BA;
+  text-align: center;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -62,9 +85,12 @@ const IndexPage = () => (
       title="React for designers"
       text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     />
-    {staticdata.cells.map(cell => (
-      <div>{cell.title}</div>
-    ))}
+    <SectionCaption>12 sections 6 hours</SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell title={cell.title} image={cell.image} />
+      ))}
+    </SectionCellGroup>
   </div>
 )
 

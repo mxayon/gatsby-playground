@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Wave from './Wave'
 
 const SectionGroup = styled.div`
     background: url(${ props => props.image });
@@ -41,6 +42,7 @@ const SectionText = styled.p`
 
 const Section = props => (
     <SectionGroup image={props.image}>
+        <Wave />
         <SectionLogo src={props.logo} />
         <SectionTitleGroup>
             <SectionTitle>{props.title}</SectionTitle>

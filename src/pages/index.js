@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Cards'
+import Section from '../components/Section'
 
 const IndexPage = () => (
   <div>
@@ -50,27 +51,33 @@ const IndexPage = () => (
       <h2>11 done, more on the way...</h2>
       <div className="CardGroup">
         <Card
-            title="React for Designers"
-            text="12 sections"
-            image={require('../images/wallpaper.jpg')}
-          />
-          <Card
-            title="Course II"
-            text="12 sections"
-            image={require('../images/wallpaper2.jpg')}
-          />
-          <Card
-            title="Course III"
-            text="12 sections"
-            image={require('../images/wallpaper3.jpg')}
-          />
-          <Card
-            title="Course IV"
-            text="12 sections"
-            image={require('../images/wallpaper4.jpg')}  
+          title="React for Designers"
+          text="12 sections"
+          image={require('../images/wallpaper.jpg')}
+        />
+        <Card
+          title="Course II"
+          text="12 sections"
+          image={require('../images/wallpaper2.jpg')}
+        />
+        <Card
+          title="Course III"
+          text="12 sections"
+          image={require('../images/wallpaper3.jpg')}
+        />
+        <Card
+          title="Course IV"
+          text="12 sections"
+          image={require('../images/wallpaper4.jpg')}
         />
       </div>
     </div>
+    <Section
+      image={require('../images/wallpaper2.jpg')}
+      logo={require('../images/logo-react.png')}
+      title="React for designers"
+      text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    />
   </div>
 )
 

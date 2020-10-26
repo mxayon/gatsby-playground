@@ -4,25 +4,25 @@ import './Header.css'
 
 class Header extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       hasScrolled: false
-    }
+    };
   }
 
   componentDidMount() {
     window.addEventListener('scroll', 
-    this.handleScroll)
+    this.handleScroll);
   }
 
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
 
     if (scrollTop > 50) {
-      this.setState({ hasScrolled: true })
+      this.setState({ hasScrolled: true });
     } else {
-      this.setState({ hasScrolled: false })
+      this.setState({ hasScrolled: false });
     }
   }
   render() {

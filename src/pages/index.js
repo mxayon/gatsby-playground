@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import Card from '../components/Cards';
 import Section from '../components/Section';
 import Wave from '../components/Wave';
+import staticdata from '../../staticdata.json'
 
 const IndexPage = () => (
   <div>
@@ -61,6 +62,9 @@ const IndexPage = () => (
       title="React for designers"
       text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     />
+    {staticdata.cells.map(cell => (
+      <div>{cell.title}</div>
+    ))}
   </div>
 )
 
